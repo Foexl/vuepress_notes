@@ -42,13 +42,17 @@ export default hopeTheme({
   // hotReload: true,
   // 在这里配置主题提供的插件
   plugins: {
-    searchPro: true,
     shiki: {
       // 你想要使用的主题
       themes: {
         light: "one-light",
         dark: "one-dark-pro",
       },
+    },
+    docsearch: {
+      appId: "XNQH755YXF",
+      apiKey: "9991b2d5b3fcb4f33cdad74fca96b43a",
+      indexName: "vuepress--delta",
     },
     // 注意: 仅用于测试! 你必须自行生成并在生产环境中使用自己的评论服务
     // comment: {
