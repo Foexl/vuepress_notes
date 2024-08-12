@@ -4,19 +4,17 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
-
+  hostname: "https://vuepress-notes-delta.vercel.app/",
   author: {
     name: "YL",
-    url: "https://mister-hope.com",
+    url: "https://github.com/Foexl/vuepress_notes",
+    email: "14767035@qq.com",
   },
   iconAssets: "fontawesome-with-brands",
-
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
-
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
-  repoDisplay: false,
-
+  pageInfo: ["Author", "PageView", "Date", "Category", "Tag", "ReadingTime", "Word"],
+  // logo: "/img/me.jpeg",
+  repo: "https://github.com/Foexl/vuepress_notes",
+  repoDisplay: true,
   docsDir: "src",
 
   // 导航栏
@@ -32,21 +30,19 @@ export default hopeTheme({
   // 加密配置
   encrypt: {
     config: {
-      "/demo/encrypt.html": ["1234"],
+      // "/demo/encrypt.html": ["1234"],
     },
   },
 
-  // 多语言配置
   metaLocales: {
-    // editLink: "在 GitHub 上编辑此页",
+    editLink: "在 GitHub 上编辑此页",
   },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
-
   // 在这里配置主题提供的插件
   plugins: {
-    search: true,
+    searchPro: true,
     shiki: {
       // 你想要使用的主题
       themes: {
@@ -66,7 +62,6 @@ export default hopeTheme({
     components: {
       // components: ["Badge", "VPCard"],
     },
-
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
       align: true,
